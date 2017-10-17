@@ -1,0 +1,95 @@
+.\" ding - a dictionary lookup program for Unix
+.\" Copyright (c) 1999-2005  Roland Rosenfeld <roland@spinnaker.de>
+.\"               
+.\" This program is free software; you can redistribute it and/or modify
+.\" it under the terms of the GNU General Public License as published by
+.\" the Free Software Foundation; either version 2 of the License, or
+.\" (at your option) any later version.
+.\" 
+.\" This program is distributed in the hope that it will be useful,
+.\" but WITHOUT ANY WARRANTY; without even the implied warranty of
+.\" MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+.\" GNU General Public License for more details.
+.\" 
+.\" You should have received a copy of the GNU General Public License
+.\" along with this program; if not, write to the Free Software
+.\" Foundation, Inc.,59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+.\"
+.\" This manual page is written especially for Debian Linux.
+.\"
+.TH DING 1 "October 2005" "Debian Project" "Debian GNU/Linux"
+.SH NAME
+ding \- dictionary lookup program for Unix
+.SH SYNOPSIS
+.B ding
+.BI [ options "] [" phrase ]
+.SH "DESCRIPTION"
+.B ding
+is a dictionary lookup program for X Windows/Unix. It comes with a
+German-English dictionary with about 345,000 entries.
+.PP
+It is based on Tk version >= 8.3 and uses the 
+.BR agrep (1)
+or
+.BR egrep (1)
+tools for searching.
+.PP
+In addition to this 
+.B ding
+can also search using
+.BR ispell (1)
+and 
+.BR dict (1).
+.PP
+It has many configuration options, such as search preferences,
+interface language (English or German), colors. It has history and
+help functions and comes with useful key and mouse bindings for quick
+and easy lookups.
+.PP
+If you enter some word or phrase as command line argument,
+.B ding
+will start up with a translation of this word/phrase.
+.SH OPTIONS
+.TP
+.BR -x , " --selection"
+Start searching for selected word (X selection).
+.TP
+.BR -m , " --mini"
+Start with minimal size (search form only).
+.TP
+.BR -r , " --remote"
+Start search in an already running program.
+.TP
+.BR -R , " --remote-new"
+Start search in an already running program or start a new program.
+.TP
+.B --noconf
+Do not save preferences
+.TP
+.BI -D " #" "\fR,\fB --debug" " #"
+Start with debug output,
+.I #
+= number (1..15).
+.SH USAGE
+It's very simple: Start 
+.B ding 
+(via KDE menu "Tools" or via command line), type in search word, press
+ENTER, read results. Search further by double-clicking a word, or
+select a word in another window and drop it by clicking with mouse
+button 2 over the "ding window". For further information consult the
+program help by pressing F1.
+.SH "SEE ALSO"
+.BR agrep (1),
+.BR egrep (1),
+.BR ispell (1),
+.BR ding (1).
+.br
+http://www.tu-chemnitz.de/~fri/ding/
+.br
+/usr/share/doc/ding/html/index.html
+.SH AUTHOR
+.B ding
+was written by Frank Richter <frank.richter@hrz.tu-chemnitz.de>.
+.PP
+This manual page was written by Roland Rosenfeld <roland@spinnaker.de>,
+for the Debian GNU/Linux system (but may be used by others). 

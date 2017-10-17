@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Ding: Dictionary English-German
+Name[de]=Ding: Wörterbuch Englisch-Deutsch
+GenericName=ding
+GenericName[de]=ding
+Exec=/usr/bin/ding
+Icon=ding
+Terminal=false
+Type=Application
+Categories=Office;Dictionary;Utility;X-Red-Hat-Extra;

@@ -1,0 +1,100 @@
+Version 1.8:   2016-09-06
+- New version of German-English translation file, now over 345,000 entries
+- Minor bug fixes
+
+Version 1.8:   2014-08-18
+- New version of German-English translation file, now over 326,000 entries
+- Minor bug fixes
+
+Version 1.7:   2010-09-13
+- New version of German-English translation file, now over 270,000 entries
+- Even more robustness with strange characters in auto search
+- Copy to clipboard, not just primary selection (Unix)
+- Minor bug fixes
+
+Version 1.6:   2009-04-15
+- New version of German-English translation file, now over 253,000 entries
+- more robust with strange characters in auto search
+- Auto search: start searching when changing a search method and autosearch set
+- Minor bug fixes: Save All, keyboard shortcuts, fonts, color selection
+
+Version 1.5:   2007-04-09
+- New version of German-English translation file, now over 216,000 entries
+- Some more keyboard shortcuts: ^W, ^U
+- bug fix in internal search 
+- changed colors when selecting text in result
+- copy to clipboard in popup/file menu
+- remote invoking changes the query entry (Debian bug #292978)
+- internal search mode works again (tcl_nonwordchars)
+- Minor bug fixes (install.sh)
+
+Version 1.4:   2005-05-02
+- New version of German-English translation file, now over 180,000 entries
+- Renamed ger-eng.txt to de-en.txt
+- Using UTF-8 encoding now ...
+- Minor bug fixes
+- Folding/compressing of additional entries (press +/- sign to fold/unfold)
+
+Version 1.3:
+- New version of ger-eng.txt (German-English translation file)
+- Trying more browsers (Unix) for URLs 
+- Internal search when input starts with /  (hint: / in vi)
+- Auto search: start search automatically when typing stops 
+  (user configurable, default off)
+- Minimize window: never (default), delayed, when focus leaves
+- Even more robustness checks with strange search queries, 
+  and bogus .dingrc files
+- Be more tolerant when searching words with umlauts
+- Some changes for MS-Windows: no stderr, selection, wheel mouse ...
+- Make search entry expandable when resizing the ding window
+- Raise the window to top when search is finished 
+  (user configurable, default off)
+- Highlight a line in the result when mouse over 
+  (user configurable, default on)
+- Changes for Tcl/Tk 8.4
+- Changes in README, install.sh by Jan Engelhardt
+
+Version 1.2:
+- New version of ger-eng.txt (German-English translation file)
+- Changes for modified format of ger-eng.txt
+- Implemented different search behaviors:
+  - passive: search starts when a query is typed in or
+             a selection is dropped with mouse button 2 (as before, default)
+  - easy:    search for the selected word starts, when ding gets the focus
+  - active:  search for the selected word starts, whenever a new selection
+             is made
+- Small changes for new Tcl/Tk versions
+- Some more robustness with strange search queries
+- Fixed bug with error correction flags with egrep etc.
+
+Version 1.1:
+- Use Tab stops for formatting of results (works for all fonts)
+- Save also main search options (full or partial, case etc.) in rc file
+- sorting for *grep cmds: good matches on top (search word without context, 
+  exact order etc.)
+- more keyboard shortcuts, help page for this
+- allowing more search commands (*grep, ispell, dict ...)
+- internal search method (doesn't need external grep cmd)
+- more robust (cleaning up search words before starting grep)
+- Umlauts as "a ... "s (for those many without umlaut keys)
+  make umlaut buttons available on demand
+- search options now as menu (as buttons on demand)
+- x-scrollbar only whe needed
+- fast switching between mini / normal size
+- Added "new window" to start a new ding application
+- added a "notice" function to make notes (to report it later...)
+- search in the result text (Shift-Return, <2> on Search button)
+- popup menu
+- command line flag -r / --remote    -> start search in an already running ding
+- command line flag -R / --remote-new-> start search in an already running ding
+                                        or start new ding
+- command line flag -m / --mini      -> start with minimized size
+- command line flag -x / --selection -> start search with the selected text
+- command line flag --noconf         -> not saving config changes
+- command line flag -D number / --debug number -> enable debugging code
+- Font changes now seen immediately
+- Changes for windows (but still not useable in M$)
+
+Version 1.0
+ - Initial version
+
